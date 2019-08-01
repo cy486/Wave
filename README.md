@@ -100,5 +100,6 @@ sudo apt-get install ffmpeg
 
 5. 点击start.bat运行监控端，进行视频监控和数据展示
 
-
+# 六团队成员
+[高得健](https://necydcy.me) 刘思翔
 
