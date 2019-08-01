@@ -102,4 +102,4 @@ sudo apt-get install ffmpeg
 
 # 六 团队成员
 [高得健](https://necydcy.me) 刘思翔
-
+特别鸣谢石家庄铁道大学王建民老师的指导。
