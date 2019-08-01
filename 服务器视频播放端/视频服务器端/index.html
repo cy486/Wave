@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="x-ua-compatible" content="IE=edge" >
+<meta name="viewport"   content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+<title>播放器</title>
+<link rel="stylesheet" href="//g.alicdn.com/de/prismplayer/2.6.0/skins/default/aliplayer-min.css" />
+<link rel="stylesheet" href="css/index.css" /> 
+
+    <link rel="stylesheet" href="css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet"/>
+
+    
+    <link rel="stylesheet" href="css/style.min862f.css?v=4.1.0" rel="stylesheet"/>
+</head>
+<body>
+	<div style="float=left; width: 200px; margin-top: 40px;margin-left: 50px;">
+    <div class="form-group">
+        <label class="col-sm-3 control-label"><h3>监控地点：</h3></label>
+        <div class="col-sm-9">
+            <input type="text" name="" class="form-control" placeholder="学校"> 
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label"><h3>监控物品：</h3></label>
+        <div class="col-sm-9">
+            <input type="text" name="" class="form-control" placeholder="笔记本电脑"> 
+
+        </div>
+    </div>
+	<br>
+	<br />
+    <div class="form-group" >
+        <label class="col-sm-3 control-label"><h3>是否发出警报：</h3></label>
+        <div class="col-sm-9">
+            <label class="radio-inline">
+                <input type="radio" checked="" value="option1" id="optionsRadios1" name="optionsRadios">警报</label>
+            <label class="radio-inline">
+                <input type="radio" value="option2" id="optionsRadios2" name="optionsRadios">不发出警报</label>
+        </div>
+    </div>
+	<div style="width: 200px; height: 100px; background-color: aquamarine; margin-top: 40px">
+		<br>
+		制作人： 高得健 刘思翔
+		<br>
+		<br>
+		学校 ：石家庄铁道大学
+		<br>
+		<br>
+		个人博客 ：<a href="https://necydcy.me/">https://necydcy.me/</a>
+		<br>
+	</div>
+	</div>
+ <div class="video-area" style="margin-top:-380px;margin-left: 350px;">
+    <div class="video-filter">
+        <input class='source' type="text" value="rtmp://rtmp01open.ys7.com/openlive/7e4dc3e3a4144178827a90789fc3cf47.hd" placeholder="rtmp://rtmp01open.ys7.com/openlive/7e4dc3e3a4144178827a90789fc3cf47.hd"></input>
+        <button class='submit' value="">提交</button>
+        <button class='change'  value="">开始播放视频</button>
+    </div>
+    <div  class="prism-player video-container" id="J_prismPlayer"></div>
+
+ 
+ <div  style="margin-top: -440px; margin-left:550px;width: 300px;">
+     <div class="ibox-content">
+         <h3>异常列表</h3>
+         <p class="small"><i class="fa fa-hand-o-up"></i>持续监控中</p>
+     
+         <div class="input-group">
+             <input type="text" placeholder="搜索" class="input input-sm form-control">
+            
+         </div>
+     
+         <ul class="sortable-list connectList agile-list">
+             <li class="warning-element">
+                 异常32
+                 <div class="agile-detail">
+                     <a href="file://localhost/f:\\test.txt" class="pull-right btn btn-xs btn-white">查看</a>
+                     <i class="fa fa-clock-o"></i> 2019.06.12
+                 </div>
+             </li>
+             <li class="success-element">
+                  异常31
+                 <div class="agile-detail">
+                     <a href="#" class="pull-right btn btn-xs btn-white">查看</a>
+                     <i class="fa fa-clock-o"></i> 2019.06.12
+                 </div>
+             </li>
+             <li class="info-element">
+                  异常30
+                 <div class="agile-detail">
+                     <a href="#" class="pull-right btn btn-xs btn-white">查看</a>
+                     <i class="fa fa-clock-o"></i>2019.06.12
+                 </div>
+             </li>
+             <li class="danger-element">
+                  异常29
+                 <div class="agile-detail">
+                     <a href="#" class="pull-right btn btn-xs btn-primary">已查看</a>
+                     <i class="fa fa-clock-o"></i> 2019.06.11
+                 </div>
+             </li>       
+         </ul>
+     </div>
+ </div>
+ </div>
+<div style="margin-top:110px;">
+			<div class="ibox-title">
+				<h5>监控动态图</h5>
+			</div>
+			
+				<div class="flot-chart">
+					<div class="flot-chart-content" id="flot-line-chart-moving"></div>
+				</div>
+			
+		
+	</div>
+</body>
+<script type="text/javascript" src="//g.alicdn.com/de/prismplayer/2.6.0/aliplayer-min.js"></script>
+<script type="text/javascript" src="lib/jquery.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>   
+ <script src="js/jquery.flot.js"></script>
+ <script src="js/flot-demo.min.js"></script>
